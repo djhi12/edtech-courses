@@ -170,6 +170,24 @@ h1, h2, h3, h4, h5, h6 {
     text-align: left;
 }
 
+@media screen and (min-width: 300px) {
+    .modal-content {
+      top: 10%;
+    }
+  }
+
+@media screen and (min-width: 350px) {
+    .modal-content {
+      top: 10%;
+    }
+  }
+
+  @media screen and (min-width: 1100px) {
+    .modal-content {
+      top: 20%;
+    }
+  }
+
 .close {
     position: absolute;
     top: 10px;

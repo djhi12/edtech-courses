@@ -34,7 +34,9 @@ modals.forEach((modal, index) => {
 function showModal(index) {
     const modalContent = [
         // html
-        `<p><strong>HTML</strong> stands for "Hypertext Markup Language." It is the standard markup language used to create and structure content on the World Wide Web (the internet). HTML is the foundation of web pages and is used to define the structure and layout of a web document, such as text, images, links, forms, and other multimedia elements.</p>
+        `
+        <div class="content-container">
+        <p><strong>HTML</strong> stands for "Hypertext Markup Language." It is the standard markup language used to create and structure content on the World Wide Web (the internet). HTML is the foundation of web pages and is used to define the structure and layout of a web document, such as text, images, links, forms, and other multimedia elements.</p>
         
         <p>By the end of this course, students will be able to:</p>
         
@@ -50,10 +52,12 @@ function showModal(index) {
         <li>Debug and Validate</li>
         <li>Collaborate and Share</li>
         </ul>
+        </div>
         `,
 
         // CSS
-        `<p>CSS stands for "Cascading Style Sheets." It is a language used in web development to control the presentation and layout of HTML (Hypertext Markup Language) elements on a webpage. HTML is responsible for defining the structure and content of a webpage, while CSS is used to define how the content should be displayed, styled, and positioned.</p>
+        `<div class="content-container">
+        <p>CSS stands for "Cascading Style Sheets." It is a language used in web development to control the presentation and layout of HTML (Hypertext Markup Language) elements on a webpage. HTML is responsible for defining the structure and content of a webpage, while CSS is used to define how the content should be displayed, styled, and positioned.</p>
 
         <p>By the end of this course, students will be able to proficiently design and style web content using CSS, demonstrating the following competencies:</p>
 
@@ -68,10 +72,12 @@ function showModal(index) {
         <li>Debugging and Troubleshooting</li>
         <li>Project Implementation</li>
         </ul>
+        </div>
         `,
 
         // JS
-        `<p>"JS" typically refers to JavaScript, which is a widely used programming language for creating interactive and dynamic content on websites. JavaScript is primarily used for front-end web development, allowing developers to add functionality, interactivity, and behavior to websites. It is supported by all major web browsers, making it a fundamental technology for building modern web applications.</p>
+        `<div class="content-container">
+        <p>"JS" typically refers to JavaScript, which is a widely used programming language for creating interactive and dynamic content on websites. JavaScript is primarily used for front-end web development, allowing developers to add functionality, interactivity, and behavior to websites. It is supported by all major web browsers, making it a fundamental technology for building modern web applications.</p>
         
         <p>By the end of the course, students should be able to:</p>
 
@@ -87,6 +93,7 @@ function showModal(index) {
         <li>Project Development</li>
         <li>Learning Resources and Lifelong Learning</li>
         </ul>
+        </div>
         `,
         // Add more content entries for each image
 
