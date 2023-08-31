@@ -8,22 +8,21 @@ images.forEach((image, index) => {
     });
 });
 
-modals.forEach((modal, index) => {
-    const closeBtn = modal.querySelector('.close'); // Find the close button within this modal
+closeBtns.forEach((closeBtn) => {
     closeBtn.addEventListener('click', () => {
-        closeModal(index); // Pass the index of the modal to be closed
-    });
-
-    modal.addEventListener('click', (event) => {
-        if (event.target === modal) {
-            closeModal(index); // Pass the index of the modal to be closed
-        }
+        closeModal();
     });
 });
 
-function closeModal(index) {
-    modals[index].style.display = 'none';
-}
+
+
+modals.forEach((modal) => {
+    modal.addEventListener('click', (event) => {
+        if (event.target === modal) {
+            closeModal();
+        }
+    });
+});
 
 function showModal(index) {
     const modalContent = [
@@ -63,3 +62,10 @@ function showModal(index) {
     modals[index].style.display = 'block';
 }
 
+
+
+function closeModal() {
+    modals.forEach((modal) => {
+        modal.style.display = 'none';
+    });
+}
