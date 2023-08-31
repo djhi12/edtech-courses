@@ -71,8 +71,22 @@ function showModal(index) {
         `,
 
         // JS
-        `<p>Content for image 3.</p>
+        `<p>"JS" typically refers to JavaScript, which is a widely used programming language for creating interactive and dynamic content on websites. JavaScript is primarily used for front-end web development, allowing developers to add functionality, interactivity, and behavior to websites. It is supported by all major web browsers, making it a fundamental technology for building modern web applications.</p>
         
+        <p>By the end of the course, students should be able to:</p>
+
+        <ul>
+        <li>Understand JavaScript Basics</li>
+        <li>Manipulate the DOM</li>
+        <li>Implement Interactive Web Features</li>
+        <li>Utilize Asynchronous Programming</li>
+        <li>Apply JavaScript Libraries and Frameworks</li>
+        <li>Build Basic Web Applications</li>
+        <li>Debugging and Troubleshooting</li>
+        <li>Introduction to Modern JavaScript Concepts</li>
+        <li>Project Development</li>
+        <li>Learning Resources and Lifelong Learning</li>
+        </ul>
         `,
         // Add more content entries for each image
 
