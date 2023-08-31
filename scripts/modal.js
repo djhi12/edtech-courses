@@ -16,19 +16,25 @@ closeBtns.forEach((closeBtn) => {
 
 
 
-modals.forEach((modal) => {
+modals.forEach((modal, index) => {
     modal.addEventListener('click', (event) => {
         if (event.target === modal) {
             closeModal();
         }
     });
+
+    // Add an event listener to the modal content area
+    const modalContentElement = modal.querySelector('.modal-content');
+    modalContentElement.addEventListener('click', (event) => {
+        event.stopPropagation(); // Prevent the click from propagating to the modal
+    });
 });
+
 
 function showModal(index) {
     const modalContent = [
         // html
-        `
-        <p><strong>HTML</strong> stands for "Hypertext Markup Language." It is the standard markup language used to create and structure content on the World Wide Web (the internet). HTML is the foundation of web pages and is used to define the structure and layout of a web document, such as text, images, links, forms, and other multimedia elements.</p>
+        `<p><strong>HTML</strong> stands for "Hypertext Markup Language." It is the standard markup language used to create and structure content on the World Wide Web (the internet). HTML is the foundation of web pages and is used to define the structure and layout of a web document, such as text, images, links, forms, and other multimedia elements.</p>
         
         <p>By the end of this course, students will be able to:</p>
         
@@ -47,9 +53,27 @@ function showModal(index) {
         `,
 
         // CSS
-        `<p>Content for image 2.</p>`,
+        `<p>CSS stands for "Cascading Style Sheets." It is a language used in web development to control the presentation and layout of HTML (Hypertext Markup Language) elements on a webpage. HTML is responsible for defining the structure and content of a webpage, while CSS is used to define how the content should be displayed, styled, and positioned.</p>
 
-        `<p>Content for image 3.</p>`,
+        <p>By the end of this course, students will be able to proficiently design and style web content using CSS, demonstrating the following competencies:</p>
+
+        <ul>
+        <li>Style Implementation</li>
+        <li>Selectors and Specificity</li>
+        <li>Responsive Design</li>
+        <li>CSS Box Model</li>
+        <li>Flexbox and Grid Layout</li>
+        <li>Browser Compatibility</li>
+        <li>Optimization and Performance</li>
+        <li>Debugging and Troubleshooting</li>
+        <li>Project Implementation</li>
+        </ul>
+        `,
+
+        // JS
+        `<p>Content for image 3.</p>
+        
+        `,
         // Add more content entries for each image
 
 
