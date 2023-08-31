@@ -1,20 +1,44 @@
-// script.js
-const image = document.getElementById('image');
-const modal = document.getElementById('modal');
-const closeBtn = document.getElementById('close');
+const images = document.querySelectorAll('.card-img-top');
+const modals = document.querySelectorAll('.modal'); // Use class selector for modals
+const closeBtns = document.querySelectorAll('.close'); // Use class selector for close buttons
 
-image.addEventListener('click', () => {
-    modal.style.display = 'block';
+images.forEach((image, index) => {
+    image.addEventListener('click', () => {
+        showModal(index);
+    });
 });
 
-closeBtn.addEventListener('click', () => {
-    modal.style.display = 'none';
+closeBtns.forEach((closeBtn) => {
+    closeBtn.addEventListener('click', () => {
+        closeModal();
+    });
 });
 
-window.addEventListener('click', (event) => {
-    if (event.target === modal) {
+modals.forEach((modal) => {
+    modal.addEventListener('click', (event) => {
+        if (event.target === modal) {
+            closeModal();
+        }
+    });
+});
+
+function showModal(index) {
+    const modalContent = [
+        "Content for image 1.",
+        "Content for image 2.",
+        "Content for image 3.",
+        // Add more content entries for each image
+    ];
+
+    const content = modalContent[index];
+
+    const modalContentElement = modals[index].querySelector('.modal-content p');
+    modalContentElement.textContent = content;
+    modals[index].style.display = 'block';
+}
+
+function closeModal() {
+    modals.forEach((modal) => {
         modal.style.display = 'none';
-    }
-});
-
-console.log('working');
+    });
+}
