@@ -143,6 +143,18 @@ h1, h2, h3, h4, h5, h6 {
     height: 238px;
 }
 
+.card-10 img {
+    height: 238px;
+}
+
+.card-11 img {
+    height: 238px;
+}
+
+.card-12 img {
+    height: 238px;
+}
+
 /* Modal */
 .modal {
     display: none;

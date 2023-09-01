@@ -210,6 +210,33 @@ function showModal(index) {
         <li>Demonstrate Project Completion</li>
         </ul>
         `,
+
+        // Code.org
+        `<p>Code.org is a non-profit organization dedicated to promoting computer science education and making programming accessible to people of all ages, especially students. Founded in 2013, the organization's primary mission is to expand access to computer science education and increase the participation of underrepresented groups in the field.</p>
+
+        <p>General outcomes that participants can expect from completing Code.org courses include:</p>
+
+        <ul>
+        <li>Introduction to Computer Science Concepts</li>
+        <li>Problem-Solving Skills</li>
+        <li>Programming Proficiency</li>
+        <li>Creativity and Innovation</li>
+        <li>Digital Literacy</li>
+        <li>Collaboration and Communication</li>
+        <li>Confidence in Coding</li>
+        <li>Preparation for Future Learning</li>
+        <li>Critical Thinking</li>
+        <li>Understanding of Ethical and Social Implications</li>
+        </ul>
+        `,
+
+        // PHP
+        `<p>Not yet available</p>
+        `,
+
+        // Database
+        `<p>Not yet available</p>
+        `,
     ];
 
     const content = modalContent[index];
