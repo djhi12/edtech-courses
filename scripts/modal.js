@@ -230,8 +230,27 @@ function showModal(index) {
         </ul>
         `,
 
-        // PHP
-        `<p>Not yet available</p>
+        // Edublocks
+        `<p>EduBlocks is an educational platform designed to introduce programming concepts to beginners using a block-based programming interface. It's particularly focused on teaching Python programming to students in a user-friendly manner. Similar to other block-based programming environments like Scratch or Blockly, EduBlocks allows users to drag and drop visual blocks representing code constructs, such as loops, conditionals, and functions, to create Python programs.</p>
+
+        <p>Here are some potential learning outcomes from using EduBlocks Python block programming course:</p>
+
+        <ul>
+        <li>Gain a fundamental understanding of programming concepts such as variables, loops, conditionals, and functions.</li>
+        <li>Develop problem-solving skills through hands-on coding activities and projects.</li>
+        <li>Learn how to create basic Python programs using a visual, block-based interface.</li>
+        <li>Understand the syntax and structure of Python code through visual representation.</li>
+        <li>Develop logical thinking and computational skills by creating algorithms and solving coding challenges.</li>
+        <li>Gain confidence in coding and computational thinking regardless of prior programming experience.</li>
+        <li>Apply programming concepts to create interactive projects, games, and simulations.</li>
+        <li>Collaborate with peers to solve problems and share ideas through coding projects.</li>
+        <li>Prepare for further exploration of text-based programming languages like Python.</li>
+        <li>Develop skills in debugging and troubleshooting code to identify and fix errors.</li>
+        <li>Explore real-world applications of programming concepts and technology.</li>
+        <li>Foster creativity by designing and implementing unique projects using Python programming concepts.</li>
+        <li>Develop a foundation for future learning in computer science and software development.</li>
+        <li>Enhance digital literacy and problem-solving abilities applicable to various fields and disciplines.</li>
+        </ul>
         `,
 
         // Database
